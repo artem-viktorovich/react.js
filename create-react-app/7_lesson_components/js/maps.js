@@ -1,0 +1,6 @@
+let openAllMaps = () => {
+
+	openGoogle();
+	openYandex();
+
+}

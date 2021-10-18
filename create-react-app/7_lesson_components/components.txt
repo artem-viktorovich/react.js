@@ -1,0 +1,53 @@
+					КОМПОНЕНТА
+
+
+Компонента - это функция, возвращающая разметку (JSX)
+Функцию она возвращает с помощью ретурна
+
+Примеры
+стандартная фунция
+	function Welcome(){
+	   return <h1>Hello, IT-KAMASUTRA</h1>;
+	}
+стрелочная функция
+	const Welcome = () => {
+	   return <h1>Hello, IT-KAMASUTRA</h1>;
+	}
+В обеих случаях функции являются компонентами
+
+ИСпользование JSX
+
+const App = () => {
+  return (
+	<div> 
+		<Header/>
+		<Technologies/> разбиение на компоненты
+	</div>
+  );
+}
+
+	const Technologies = () => {
+		return (
+			<div className="App">
+			<ul>
+				<li>html</li>
+				<li>css</li>
+				<li>js</li>
+				<li>react</li>
+				<li>ку-ку</li>
+			</ul>
+		</div>
+		);
+	}
+  const Header = () => {
+	  return (
+		<div>
+			<a href="#">Home</a>
+			<a href="#">News Feed</a>
+			<a href="#">Messages</a>
+		</div>
+		);
+  }
+
+
+export default App;
