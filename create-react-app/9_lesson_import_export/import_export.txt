@@ -1,0 +1,24 @@
+При делениее компонентов, пишем такой синтаксис
+
+ const Technologies = () => {
+	return (
+		<div className="App">
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li>js</li>
+			<li>react</li>
+			<li>ку-ку</li>
+		</ul>
+	</div>
+	);
+}
+
+export default Technologies; - обязательный аттрибут для работы с импортом
+
+При разделении файлов, пишем импорты
+
+import Header from './Header';
+import Technologies from './Technologies';
+
+Импорты пишем в главный файл, к которому подключаем доп файлы
