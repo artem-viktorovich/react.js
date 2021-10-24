@@ -1,15 +1,15 @@
 //import React from 'react' ;
 import './App.css';
-import Content from './Content';
-import Header from './Header';
-import Navigation from './Navigation';
+import Profile from './components/Profile.jsx';
+import Header from './components/Header.jsx';
+import Navigation from './components/Navigation.jsx';
 
 const App = () => {
   return (
 	<div className='app-wrapper'> 
 		<Header />
-		<Navigation/>
-		<Content/>
+		<Navigation />
+		<Profile />
 	</div>
   );
 }

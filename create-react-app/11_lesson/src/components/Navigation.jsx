@@ -1,4 +1,5 @@
-let Navigation = () => {
+
+const Navigation = () => {
 	return (
 		<section className='nav'>
 		<div class="header__menu menu">
