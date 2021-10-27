@@ -5,14 +5,26 @@ const Post = (props ) => {
 	return (
 		<section className={p_t.Post_body}>
 			<div className={p_t.Post_item}>
-				<img src="https://avatars.mds.yandex.net/i?id=026ff47b49d6475b8540af980292e791-5257871-images-thumbs&n=13" alt="avatar_user" />
-				<p className={p_t.title}>Хеллоу</p>
+				<img src="https://avatars.mds.yandex.net
+					/i?id=026ff47b49d6475b8540af980292e791-5257871-
+						images-thumbs&n=13" alt="avatar_user" />
+				<p className={p_t.title}>{props.message}</p>
 				<span>Like</span>
 			</div>
 		</section>
 
 	)
 }
-переход значения элемента из объекта в пропс, и далее можно манипулировтаь
+переход значения элемента из объекта в пропс, и далее можно манипулировать
+Реакт сам отправляет объект в качестве пропса
 
 Переход значения объекта в функцию 
+
+	<div className={Mp.MyPosts}>
+			<div className='MyPosts_body'>
+				<textarea name=""></textarea>
+				<button>Add Post</button>
+			</div>
+			<Post message='Привет бейби'/>
+			<Post message='Здоров'/>
+		</div>
