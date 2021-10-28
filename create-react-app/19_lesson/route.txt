@@ -1,0 +1,13 @@
+Route - маршрутизация
+<BrowserRouter> обромление для вёрстки
+			<div className='app-wrapper'> 
+				<Header />
+				<Navigation />
+				<section className='app-wrapper-content'>
+					<Route path='/Profile' component={Profile}/> ссылка, которую активирует тег в реакте
+					<Route path='/Dialogs' component={Dialogs}/>
+				</section>
+
+				
+			</div>
+	  </BrowserRouter>
