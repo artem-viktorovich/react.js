@@ -1,0 +1,30 @@
+REDUX
+
+Библиотека для реализации флакс архитектуры, для круговорота данных
+
+	let onPostChange = () => {
+		let text = newPostElement.current.value; //отправка поста в бизнес
+		props.updateNewPostText(text);
+	} -  отправляем посты в бизнес
+
+onChange = {onPostChange} - слушает и принимает данные с textarea
+
+было 
+	export let addPost = (postMessage) => {
+		let newPost = {
+			id: 5,
+			message: postMessage,
+			LikesCount: 0
+		};
+
+стало
+		export let addPost = () => {
+		let newPost = {
+			id: 5,
+			message: state.profilePage.newPostText,
+			LikesCount: 0
+		};
+		state.profilePage.posts.push(newPost);
+		state.profilePage.newPostText = '';обнуление непосредственно бизнесом
+		rerenderEntureTree(state); //запускает перерисовку BLL
+
