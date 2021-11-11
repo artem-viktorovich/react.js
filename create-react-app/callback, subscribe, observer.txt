@@ -1,0 +1,14 @@
+Удалив render нужно прописать в стейте функцию, чтоб работала  rerenderEntureTree
+
+let  rerenderEntureTree = () => {
+	console.log('Kazah');
+}
+
+Но перерисовка не срабатывает
+
+callback - функции, которые мы отдаем, чтобы их вызывать
+
+
+export const subscribe = (observer) => {
+	rerenderEntureTree = observer; из внешнего мира наблюдатель. и вызов изменений observer
+}
